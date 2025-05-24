@@ -4,7 +4,7 @@ require_once('../VO/UsuarioVO.php');
 //Configuracion de cabeceras para CORS
 
 header("Access-Control-Allow-Origin: *");
-//header("Access-Control-Allow-Origin: https://tudominio.netlify.app");
+header("Access-Control-Allow-Credentials: true");
 header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Content-Type: application/json");

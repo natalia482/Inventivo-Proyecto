@@ -1,5 +1,5 @@
 // login.js
-const API_LOGIN_URL = '../MODELO/CRUD/LoginApi.js';
+const API_LOGIN_URL = './MODELO/CRUD/UsuariologinAPI.php';
 
 document.addEventListener('DOMContentLoaded', () => {
   const loginForm = document.getElementById('loginForm');
