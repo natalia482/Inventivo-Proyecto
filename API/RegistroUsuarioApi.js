@@ -1,5 +1,5 @@
     
-const API_REGISTRO_URL = 'Inventivo_Proyecto/MODELO/CRUD/UsuarioAPI.php';
+const API_REGISTRO_URL = './Inventivo_Proyecto/MODELO/CRUD/UsuarioAPI.php';
 
   document.getElementById('registroForm').addEventListener('submit', async function(event) {
     event.preventDefault();
