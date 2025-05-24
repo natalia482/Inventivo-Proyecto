@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ingreso Usuario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./INTERFACES/CSS/Login.css">    
+    <style>
+        
+    </style>
+
+    <!-- Íconos SVG inline para usar -->
+    <script>
+        // Íconos SVG para usuario y contraseña
+        const iconUser = `
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#b9ff59" viewBox="0 0 24 24" width="24px" height="24px">
+                <path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.33 0-10 1.672-10 5v3h20v-3c0-3.328-6.67-5-10-5z"/>
+            </svg>`;
+        const iconLock = `
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#b9ff59" viewBox="0 0 24 24" width="24px" height="24px">
+                <path d="M17 8h-1V6c0-2.761-2.239-5-5-5S6 3.239 6 6v2H5c-1.104 0-2 .896-2 2v9c0 1.104.896 2 2 2h12c1.104 0 2-.896 2-2v-9c0-1.104-.896-2-2-2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-9H9V6c0-1.654 1.346-3 3-3s3 1.346 3 3v2z"/>
+            </svg>`;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="./INTERFACES/imagenes/Logo.png" alt="Logo Robot Planta" />
+            <h2>INICIO</h2>
+        </div>
+        <div class="right">
+            <h1>BIENVENIDO</h1>
+            <form id="loginForm" novalidate>
+                <div class="input-group" aria-label="Usuario">
+                    <span class="icon" aria-hidden="true" id="iconUser"></span>
+                    <input
+                        type="text"
+                        id="usuario"
+                        name="usuario"
+                        placeholder="Usuario"
+                        required
+                        autocomplete="off"
+                        aria-describedby="iconUser"
+                    />
+                </div>
+                <div class="input-group" aria-label="Contraseña">
+                    <span class="icon" aria-hidden="true" id="iconLock"></span>
+                    <input
+                        type="password"
+                        id="pas"
+                        name="pas"
+                        placeholder="Contraseña"
+                        required
+                        autocomplete="current-password"
+                        aria-describedby="iconLock"
+                    />
+                </div>
+                <div class="links">
+                    <a href="Registrousuario.php">Regístrate aquí</a>
+                </div>
+                <button type="submit" class="btn-submit">INGRESAR</button>
+                <div class="links">
+                    <a href="Contraseña.php">Olvide mi contraseña</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./API/LoginApi.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    background: url('../imagenes/FONDO.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #b9ff59;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.479);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .left, .right {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .right h1{
+    text-align: center;
+  }
+  .left {
+    flex: 1 1 300px;
+    background: rgba(10, 44, 43, 0.582);
+    align-items: center;
+    gap: 20px;
+  }
+  .left img {
+    max-width: 250px;
+    user-select: none;
+  }
+  .left h2 {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    margin-top: -50px;
+  }
+  .right {
+    flex: 1 1 400px;
+    color: #fff;
+  }
+  .right h1 {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #e0e0e000;
+    border-radius: 35px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1a1a00;
+    padding: 10px 20px;
+  }
+  .input-group .icon {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  input[type="text"],
+  input[type="password"] {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.2rem;
+    flex-grow: 1;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  input::placeholder {
+    color: #fff ;
+    opacity: 0.7;
+  }
+  .btn-submit {
+    background: #1a1a00;
+    color: #b9ff59;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 35px;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .btn-submit:hover {
+    background: #6cf200;
+    color: #0a2c2b;
+  }
+  .links {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .links a {
+    color: #b9ff59;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+  }
+  .links a:hover {
+    color: #6cf200;
+  }
+  @media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+      width: 90vw;
+    }
+    .left, .right {
+      flex: 1 1 100%;
+      padding: 30px 20px;
+    }
+    .left h2 {
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+    .right h1 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+  }

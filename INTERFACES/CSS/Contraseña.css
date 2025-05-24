@@ -1,0 +1,125 @@
+/* Reset */
+  * {
+    box-sizing: border-box;
+  }
+   body {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family: 'Jost', sans-serif;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+     body::before {
+        content: "";
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: url('../imagenes/FONDO.jpg') no-repeat center center/cover;
+        opacity: 0.8;  /* aquí controlas la opacidad */
+        z-index: -1;
+        pointer-events: none;
+        }
+
+  .container {
+    max-width: 1000px;
+    width: 90%;
+    background: #8b46016e;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 30px 60px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    color: white;
+    text-align: center;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 0px;
+    color: #002f12;
+  }
+
+  p.description {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-group {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 25px;
+  }
+
+  .input-group input[type="email"] {
+    width: 100%;
+    padding: 12px 45px 12px 45px;
+    border-radius: 30px;
+    border: 1.5px solid #7ed957;
+    background: rgba(255 255 255 / 0.15);
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 2rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  .input-group input::placeholder {
+    color: #b9ff59;
+    font-weight: 600;
+  }
+  .input-group input:focus {
+    border-color: #b9ff59;
+    background: rgba(255 255 255 / 0.3);
+  }
+
+  .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #b9ff59;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  button {
+    width: 100%;
+    max-width: 450px;
+    background-color: #1c1c18;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 14px 0;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #3b8652;
+    text-decoration: none;
+  }
+
+  /* Responsive */
+  @media (max-width: 480px) {
+    .container {
+      padding: 30px 20px 50px;
+    }
+    h1 {
+      font-size: 2.2rem;
+    }
+  }

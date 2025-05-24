@@ -1,0 +1,178 @@
+/* Reset y base */
+* {
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+  font-family: 'Jost', sans-serif;
+}
+body, html {
+  margin: 0;
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Contenido principal */
+main.content {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  flex-grow: 1;
+  overflow-x: auto;
+}
+
+/* Título */
+main.content h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+/* Barra superior */
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.search-wrapper {
+  position: relative;
+  flex-grow: 1;
+  max-width: 400px;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  background: #d6d6ca;
+  padding: 8px 40px 8px 15px;
+  font-size: 1rem;
+  color: #666;
+  outline: none;
+}
+
+.search-wrapper svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  fill: #b9ff59;
+}
+
+.btn-add {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #dccfc3;
+  color: #000;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border: none;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.btn-add svg {
+  fill: #b9ff59;
+  width: 18px;
+  height: 18px;
+}
+
+.btn-add:hover {
+  background: #c3b7a8;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 5px;
+  table-layout: auto;
+  word-wrap: break-word;
+}
+
+thead tr {
+  background-color: #b9ff59;
+  color: #000;
+  font-weight: 700;
+}
+
+thead th, tbody td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+tbody tr td:last-child svg {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+  fill: #0a2c2b;
+  transition: fill 0.3s ease;
+}
+
+tbody tr td:last-child svg:hover {
+  fill: #6cf200;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  /* Esconder encabezados de tabla */
+  thead {
+    display: none;
+  }
+
+  /* Mostrar filas como bloques */
+  tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #b9ff59;
+    border-radius: 8px;
+    padding: 10px;
+    background: #f9f9f9;
+  }
+
+  tbody tr td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+  }
+
+  tbody tr td:last-child {
+    border-bottom: none;
+  }
+
+  /* Etiquetas para cada celda usando data-label */
+  tbody tr td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #0a2c2b;
+    flex-basis: 45%;
+  }
+
+  tbody tr td:last-child svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
