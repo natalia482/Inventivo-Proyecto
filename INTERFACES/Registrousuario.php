@@ -20,15 +20,15 @@
     <div class="right">
       <h1>BIENVENIDO</h1>
       <form id="registroForm" novalidate>
-        <input type="hidden" id="rol" name="rol_usuario" value="ADMINISTRADOR" />
+        <input type="hidden" id="rol" name="rol_usuario" value="ADMINISTRADOR" autocomplete="off"/>
         
         <div class="input-group">
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.33 0-10 1.672-10 5v3h20v-3c0-3.328-6.67-5-10-5z"/></svg>
-          <input type="text" id="name" name="nom_usuario" placeholder="Nombres" required />
+          <input type="text" id="name" name="nom_usuario" placeholder="Nombres" required autocomplete="off"/>
         </div>
         <div class="input-group">
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-3.33 0-10 1.672-10 5v3h20v-3c0-3.328-6.67-5-10-5z"/></svg>
-          <input type="text" id="apellido" name="apellido_usuario" placeholder="Apellidos" required />
+          <input type="text" id="apellido" name="apellido_usuario" placeholder="Apellidos" required autocomplete="off" />
         </div>
         <div class="input-group">
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5z"/></svg>
@@ -41,31 +41,31 @@
         </div>
         <div class="input-group">
           <svg class="icon" viewBox="0 0 24 24"><path d="M21 11.5a3 3 0 0 0-3-3H6a3 3 0 0 0-3 3v5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3v-5zM9 18a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/></svg>
-          <input type="text" id="documento" name="num_documento" placeholder="Número de documento" required />
+          <input type="text" id="documento" name="num_documento" placeholder="Número de documento" required autocomplete="off"/>
         </div>
         <div class="input-group half">
           <svg class="icon" viewBox="0 0 24 24"><path d="M22 15a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3v-2a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v2z"/></svg>
-          <input type="tel" id="telefono" name="telefono_usuario" placeholder="Teléfono" />
+          <input type="tel" id="telefono" name="telefono_usuario" placeholder="Teléfono" autocomplete="off"/>
         </div>
         <div class="input-group half">
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l3 7h-6l3-7zm0 22v-4h3v-4H9v4h3v4z"/></svg>
-          <input type="text" id="ciudad" name="ciudad_usuario" placeholder="Ciudad" required />
+          <input type="text" id="ciudad" name="ciudad_usuario" placeholder="Ciudad" required autocomplete="off"/>
         </div>
         <div class="input-group">
           <svg class="icon" viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v1l10 6 10-6V6a2 2 0 0 0-2-2zM4 8v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-10 6-10-6z"/></svg>
-          <input type="email" id="email" name="email_usuario" placeholder="Correo electrónico" required />
+          <input type="email" id="email" name="email_usuario" placeholder="Correo electrónico" required autocomplete="off"/>
         </div>
         <div class="input-group">
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5z"/></svg>
-          <input type="text" id="usuario" name="usuario" placeholder="Usuario" required />
+          <input type="text" id="usuario" name="usuario" placeholder="Usuario" required autocomplete="off"/>
         </div>
         <div class="input-group">
           <svg class="icon" viewBox="0 0 24 24"><path d="M17 8h-1V6c0-2.761-2.239-5-5-5S6 3.239 6 6v2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-9H9V6c0-1.654 1.346-3 3-3s3 1.346 3 3v2z"/></svg>
-          <input type="password" id="pas" name="contraseña" placeholder="Contraseña" required />
+          <input type="password" id="pas" name="contraseña" placeholder="Contraseña" required autocomplete="off"/>
         </div>
         <div class="input-group">
           <svg class="icon" viewBox="0 0 24 24"><path d="M17 8h-1V6c0-2.761-2.239-5-5-5S6 3.239 6 6v2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-9a2 2 0 0 0-2-2zm-5 9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm3-9H9V6c0-1.654 1.346-3 3-3s3 1.346 3 3v2z"/></svg>
-          <input type="password" id="pas2" name="pas2" placeholder="Confirmar contraseña" required />
+          <input type="password" id="pas2" name="pas2" placeholder="Confirmar contraseña" required autocomplete="off"/>
         </div>
         <button type="submit">REGISTRAR</button>
       </form>
