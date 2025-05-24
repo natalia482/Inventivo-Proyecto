@@ -1,5 +1,5 @@
     
-const API_REGISTRO_URL = './MODELO/CRUD/UsuarioAPI.php';
+const API_REGISTRO_URL = '../MODELO/CRUD/UsuarioAPI.php';
 
   document.getElementById('registroForm').addEventListener('submit', async function(event) {
     event.preventDefault();
@@ -33,7 +33,7 @@ const API_REGISTRO_URL = './MODELO/CRUD/UsuarioAPI.php';
 
         if (response.ok && data.success) {
         alert('Usuario registrado exitosamente');
-        window.location.href = "Login.php";
+        window.location.href = '../index.html';
         } else {
         alert('Error al registrar el usuario: ' + (data.message || 'Error desconocido'));
         console.error(data);
