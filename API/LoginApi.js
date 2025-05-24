@@ -1,5 +1,5 @@
 // login.js
-const API_LOGIN_URL = '../Inventivo_Proyecto/MODELO/CRUD/UsuariologinAPI.php';
+const API_LOGIN_URL = 'https://inventivo.netlify.app/API/LoginApi.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const loginForm = document.getElementById('loginForm');
